@@ -13,7 +13,8 @@ I welcome all quality contributions to framework and I hope with all your help w
 - Report bugs and issues
 - Built a (QUALITY) site using Project Yeti? Share with us and we may add a link to this page!
 - Sharing Project Yeti on social media sites such as Facebook, Tweeter and Google plus will help us gain more contributors!
-- Pull requests are highly appericated and hope that many awesome people get in involved, however you should note the following guildlines before requesting a pull request: - asd
+- Pull requests are highly appericated and hope that many awesome people get in involved, however you should note the following guildlines before requesting a pull request:
+- - ads
 
 Pull Requests
 
