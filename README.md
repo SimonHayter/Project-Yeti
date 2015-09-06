@@ -5,8 +5,25 @@ Currently [Foundation 6 is in prototype](http://zurb.com/article/1403/foundation
 ### Licensing Agreements
 Please beware that this WordPress template is Licensed under GNU GENERAL PUBLIC LICENSE and Foundation 6 by ZURB is licensed under the MIT license, you are welcome to fork, copy, modify, delete, share and even sell for profit but do ensure you keep the original licenses intact. 
 
-### Start Contributing Today
-I welcome any quality contributions to this project and I hope we can make Project Yeti a winning success story for providing a lightweight WordPress starter theme based on Foundation. 
+### Ways you can contribute to Project Yeti
+
+I welcome all quality contributions to framework and I hope with all your help we can make Project a winning sucess story for providing the very best lightweight WordPress starter theme based on Foundation. Here's just a few ways how you can help:
+
+- Star this Repository!
+- Report bugs and issues
+- Built a (QUALITY) site using Project Yeti? Share with us and we may add a link to this page!
+- Sharing Project Yeti on social media sites such as Facebook, Tweeter and Google plus will help us gain more contributors!
+- Pull requests are highly appericated and hope that many awesome people get in involved, however you should note the following guildlines before requesting a pull request: - asd
+
+Pull Requests
+
+Pull requests are highly appreciated. More than three dozen amazing people have contributed to FoundationPress (so far). Here are some guidelines to help:
+
+    Solve a problem. Features are great, but even better is cleaning-up and fixing issues in the code that you discover
+    Make sure that your code is bug-free and does not introduce new bugs
+    Create a pull request
+    Verify that all the checks have passed
+
 
 ### WordPress Theme Features Included
 -	Hentry Disabled in favour of SCHEMA
@@ -18,3 +35,7 @@ Stay tuned!
 
 ### BORED?
 Find out more about [Simon Hayter](https://www.bybe.net/about/)
+
+
+
+
