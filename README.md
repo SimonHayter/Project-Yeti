@@ -1,4 +1,5 @@
-# Project Yeti  
+# Project Yeti
+![Project Yeti WordPress Starter Theme based on Zurb Foundation](https://www.bybe.net/files/github/project-yeti-wordpress-starter-theme-based-on-zurb-foundation-6.png)
 ## A ZURB Foundation 6 WordPress Starter Theme
 Project Yeti is a WordPress starter theme based on Zurb Foundation 6. Due to the fact this is a starter theme it is considered ideal for website designers and developers, if you want a full polished theme then this is not for you.
 Currently [Foundation 6 is in prototype](http://zurb.com/article/1403/foundation-6-prototype-to-production) and therefore should be considered a BETA, and errors should be expected to say the least. 
