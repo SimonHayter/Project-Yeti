@@ -13,18 +13,13 @@ I welcome all quality contributions to framework and I hope with all your help w
 - Report bugs and issues
 - Built a (QUALITY) site using Project Yeti? Share with us and we may add a link to this page!
 - Sharing Project Yeti on social media sites such as Facebook, Tweeter and Google plus will help us gain more contributors!
-- Pull requests are highly appericated and hope that many awesome people get in involved, however you should note the following guildlines before requesting a pull request:
-- - ads
+- Pull requests are highly appericated and hope that many awesome people get in involved, please ensure that you fix or improve code, please don't create new issues. 
 
-Pull Requests
+### DEMO
+- Nothing here yet... stay tuned!
 
-Pull requests are highly appreciated. More than three dozen amazing people have contributed to FoundationPress (so far). Here are some guidelines to help:
-
-    Solve a problem. Features are great, but even better is cleaning-up and fixing issues in the code that you discover
-    Make sure that your code is bug-free and does not introduce new bugs
-    Create a pull request
-    Verify that all the checks have passed
-
+### WordPress sites based on Project Yeti!
+Please hit me on Twitter [@SimonHayterUK](https://www.twitter.com/SimonHayterUK) with the URL so I can add your site to this page. Please only good sites, that look great! and does the Yeti Proud.
 
 ### WordPress Theme Features Included
 -	Hentry Disabled in favour of SCHEMA
@@ -36,7 +31,3 @@ Stay tuned!
 
 ### BORED?
 Find out more about [Simon Hayter](https://www.bybe.net/about/)
-
-
-
-
