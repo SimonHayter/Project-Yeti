@@ -158,6 +158,10 @@ Tags: ZURB, Foundation 6, White, Grey, Blue, Responsive, Clean, Modern, Flat
   padding: 0 0.4rem;
 }
 
+.py-theme .dropdown.menu .has-submenu.is-right-arrow > a::after {
+    border-width: 0;
+}
+
 @media only screen and (min-width: 32em) {
 
 .py-theme .top-bar li:hover {
