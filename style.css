@@ -1,0 +1,235 @@
+/*
+Theme Name:         Project Yeti
+Theme URI:          https://www.bybe.net/project-yeti/
+Description:        A starter theme project using ZURB Foundation 6 designed for WordPress
+Version:            0.1a
+Author:             Simon Hayter
+Author URI:         https://simonhayter.co.uk
+
+License:            GNU GENERAL PUBLIC LICENSE
+License URI:        http://www.gnu.org/licenses/gpl-3.0.en.html
+
+Tags: ZURB, Foundation 6, White, Grey, Blue, Responsive, Clean, Modern, Flat
+*/
+
+.py-theme .top-bar {
+  padding: 0rem;
+}
+
+.py-theme .top-bar, .py-theme .top-bar ul, .py-theme .top-bar .dropdown.menu .submenu, .py-theme .title-bar-title, .py-theme .title-bar {
+  background: #333;
+  color: #666;
+  border: medium none;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.py-theme .top-bar ul {
+  margin-left: 0;
+}
+
+.py-theme .dropdown.menu .has-submenu.is-down-arrow > a::after {
+  border-width: 0;
+}
+
+.py-theme .top-bar .dropdown.menu .submenu li a {
+  padding: 0.7rem 1rem;  
+}
+
+.py-theme .top-bar li a {
+  color: #666;
+}
+
+.py-sidebar-footer h6 {
+  font-weight: 700;
+}
+
+.py-sidebar-footer ul {
+  margin-left: 0;
+}
+
+.py-sidebar-footer a {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.py-sidebar-footer a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.py-sidebar-footer li {
+  list-style: none;
+}
+
+.py-theme main figure {
+  margin: 1rem 0;
+}
+
+.py-theme main figure img {
+  border: 4px solid #fefefe;
+  border-radius: 0;
+  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+  display: inline-block;
+  line-height: 0;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  transition: box-shadow 0.2s ease-out 0s;
+}
+
+.py-footer-menu-b {
+  background: #074e68;
+  padding: 1rem 0;
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: 400;
+}
+
+.py-copyright {
+  background: #333;
+  width: 100%;
+  padding:1rem 0 0.5rem;
+  color: #666;
+
+}
+  
+.py-copyright a { 
+  color: #666;
+  padding: 3px 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.py-copyright .py-lnk {
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+.py-copyright p {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.py-sidebar-newsletter {
+    background: #085a78 none repeat scroll 0 0;
+    padding: 1rem 0;
+    color: white;
+}
+
+.py-sidebar-newsletter p {
+  margin-bottom: 0;
+}
+
+.py-theme #sidebar ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.py-copyright a:hover, .py-theme .top-bar li a:hover {
+  color: white;
+}
+
+.py-sidebar-footer .widget_text:nth-child(2), .py-sidebar-footer .widget_text:nth-child(3), .py-sidebar-footer .widget_text:nth-child(4) {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.py-theme .top-bar .dropdown.menu .submenu li a {
+  line-height: 45px;
+}
+
+.py-theme .top-bar .dropdown.menu .submenu {
+  border-top: 1px solid #444;
+}
+
+.pagination-centered {
+    margin:0 auto;
+    display: table;
+}
+
+.py-theme .page-numbers {
+
+  list-style: none;
+}
+
+.py-theme .page-numbers li {
+  display: inline;
+}
+
+.py-theme .page-numbers .current {
+  background: #2199e8 none repeat scroll 0 0;
+  color: #fefefe;
+  padding: 0 0.4rem;
+}
+
+@media only screen and (min-width: 32em) {
+
+.py-theme .top-bar li:hover {
+  background: #121212;
+}
+
+.divider {
+  background: #444 none repeat scroll 0 0;
+  width: 1px;
+}
+
+main {
+  margin: 4rem 0;
+}
+
+}
+
+
+@media only screen and (max-width: 32em) {
+
+.top-bar-right li {
+  display: block;
+}
+
+.top-bar-right .is-drilldown {
+  height: auto!important;
+}
+
+.py-theme .is-drilldown-sub.is-active {
+  margin-left: 0;
+  padding: 0.5rem;
+}
+
+}
+
+.demo-header {
+    background: rgba(0, 0, 0, 0) url("http://project-yeti.bybe.net/wp-content/uploads/2015/11/home-bg-01.svg") repeat scroll center center / cover ;
+    padding-bottom: 250px;
+    padding-top: 180px;
+    margin-top: -4rem;
+    margin-bottom: -4rem;
+}
+
+.demo-header h1 {
+  color: #fefefe;
+  font-size: 2.875rem;
+  margin: 0;
+  text-align: left;
+}
+
+.demo-header h2 {
+  color: #fefefe;
+  font-size: 1.3125rem;
+  font-weight: 200;
+}
+
+.demo-header .button {
+  background: #ff6908 none repeat scroll 0 0;
+}
+
+.demo-header .button {
+  margin-top: 20px;
+}
+
+.demo-header .button:hover {
+  background: #e05800 none repeat scroll 0 0;
+}
+
+.demo-header li a {
+  color: white;
+}
+
+.demo-header li a:hover {
+  color: #e05800;
+}
