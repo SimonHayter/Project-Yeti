@@ -3,7 +3,7 @@
 ## A ZURB Foundation 6 WordPress Starter Theme
 Project Yeti is a WordPress starter theme based on Zurb Foundation 6, coded by  [Simon Hayter](https://www.bybe.net/about/) from BYBE. Due to the fact this is a starter theme it is considered ideal for website designers and developers, if you want a full polished theme then this is not for you. [Foundation 6 has ONLY just been released](http://zurb.com/article/1416/foundation-6-is-here) and therefore minor issues should be expected.
 
-If you want to say thank you, or have any issues then please visit [Project Yeti support page on BYBE.net](https://www.bybe.net/project-yeti/).
+If you want to say thank you, give feedback or have any issues then please visit the [Project Yeti Support Page](https://www.bybe.net/project-yeti/) on BYBE.net
 
 ### Licensing Agreements
 Please beware that this WordPress template is Licensed under GNU GENERAL PUBLIC LICENSE and Foundation 6 by ZURB is licensed under the MIT license, you are welcome to fork, copy, modify, delete, share and even sell for profit but do ensure you keep the original licenses intact. If you fail to keep the licensing intact then you may feel the full wrath of the YETI MONSTER!
