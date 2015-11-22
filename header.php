@@ -6,7 +6,7 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header>
+<header class="py-topbar">
   <div class="title-bar" data-responsive-toggle="YetiMenu" data-hide-for="medium">
     <button class="menu-icon" type="button" data-toggle></button>
     <div class="title-bar-title"><?php bloginfo( 'name' ); ?></div>
@@ -22,7 +22,7 @@
       </ul>
     </div>
     <div class="top-bar-right">
-      <?php wp_nav_menu( array( 'theme_location' => 'topbarmenu', 'container' => false, 'depth' => 0, 'items_wrap' => '<ul class="menu" data-responsive-menu="drilldown medium-dropdown">%3$s</ul>', 'fallback_cb' => 'py_menu_fallback', 'walker' => new py_menu( array( 'in_top_bar' => true, 'item_type' => 'li', 'menu_type' => 'main-menu' ) ), ) ); ?>
+      <?php wp_nav_menu( array( 'theme_location' => 'topbarmenu', 'container' => false, 'depth' => 0, 'items_wrap' => '<ul class="menu" data-responsive-menu="drilldown medium-dropdown" data-click-open="false">%3$s</ul>', 'fallback_cb' => 'py_menu_fallback', 'walker' => new py_menu( array( 'in_top_bar' => true, 'item_type' => 'li', 'menu_type' => 'main-menu' ) ), ) ); ?>
     </div>
   </nav>
 </header>

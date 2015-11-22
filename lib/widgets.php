@@ -17,7 +17,7 @@ function py_widgets() {
 	  'id' => 'py-footer',
 	  'name' => __( 'Footer', 'projectyeti' ),
 	  'description' => __( 'Drag items to populate footer menu', 'projectyeti' ),
-	  'before_widget' => '<div id="%1$s" class="large-3 columns widget %2$s">',
+	  'before_widget' => '<div id="%1$s" class="medium-3 columns widget %2$s">',
 	  'after_widget' => '</div>',
 	  'before_title' => '<h6>',
 	  'after_title' => '</h6>',

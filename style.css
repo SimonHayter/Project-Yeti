@@ -16,6 +16,10 @@ Tags: ZURB, Foundation 6, White, Grey, Blue, Responsive, Clean, Modern, Flat
   padding: 0rem;
 }
 
+.py-theme .title-bar, .py-topbar {
+  position: relative;
+}
+
 .py-theme .top-bar, .py-theme .top-bar ul, .py-theme .top-bar .dropdown.menu .submenu, .py-theme .title-bar-title, .py-theme .title-bar {
   background: #333;
   color: #666;
@@ -162,41 +166,6 @@ Tags: ZURB, Foundation 6, White, Grey, Blue, Responsive, Clean, Modern, Flat
     border-width: 0;
 }
 
-@media only screen and (min-width: 32em) {
-
-.py-theme .top-bar li:hover {
-  background: #121212;
-}
-
-.divider {
-  background: #444 none repeat scroll 0 0;
-  width: 1px;
-}
-
-main {
-  margin: 4rem 0;
-}
-
-}
-
-
-@media only screen and (max-width: 32em) {
-
-.top-bar-right li {
-  display: block;
-}
-
-.top-bar-right .is-drilldown {
-  height: auto!important;
-}
-
-.py-theme .is-drilldown-sub.is-active {
-  margin-left: 0;
-  padding: 0.5rem;
-}
-
-}
-
 .demo-header {
     background: rgba(0, 0, 0, 0) url("http://project-yeti.bybe.net/wp-content/uploads/2015/11/home-bg-01.svg") repeat scroll center center / cover ;
     padding-bottom: 250px;
@@ -237,3 +206,54 @@ main {
 .demo-header li a:hover {
   color: #e05800;
 }
+
+@media only screen and (min-width: 32em) {
+
+.py-theme .top-bar li:hover {
+  background: #121212;
+}
+
+.divider {
+  background: #444 none repeat scroll 0 0;
+  width: 1px;
+}
+
+main {
+  margin: 4rem 0;
+}
+
+}
+
+
+@media only screen and (max-width: 32em) {
+
+.top-bar-right li {
+  display: block;
+}
+
+.top-bar-right .is-drilldown {
+  height: auto!important;
+}
+
+.py-theme .is-drilldown-sub.is-active {
+  margin-left: 0;
+  padding: 0.5rem;
+}
+.py-copyright li {
+  display: block;
+  padding: 0.3rem 0;
+}
+
+.demo-header {
+    margin-bottom: -2rem;
+    margin-top: -2rem;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+main {
+    margin: 2rem 0;
+}
+
+}
+
