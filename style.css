@@ -207,7 +207,7 @@ Tags: ZURB, Foundation 6, White, Grey, Blue, Responsive, Clean, Modern, Flat
   color: #e05800;
 }
 
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 640px) {
 
 .py-theme .top-bar li:hover {
   background: #121212;
@@ -224,8 +224,54 @@ main {
 
 }
 
+@media only screen and (max-width: 639px) {
+.js-drilldown-back::before {
+  border-width: 0;
+  margin: 0;
+}
 
-@media only screen and (max-width: 32em) {
+.has-submenu.submenu.is-drilldown-submenu.is-active li {
+  margin: 0.7rem 1rem;
+}
+
+.is-drilldown-submenu-parent > a::after {
+  border-color: transparent transparent transparent #fefefe;
+}
+
+.menu.drilldown .is-drilldown-submenu-parent .has-submenu .is-drilldown-submenu-parent > a::after {
+  border-color: transparent transparent transparent #fefefe;
+  float: right;
+  height: 0;
+  margin-top: 7px;
+  position: relative;
+  right: 0;
+  top: 0;
+}
+
+.menu.drilldown li:last-child {
+  margin-bottom: 0.5rem;
+}
+
+.menu.drilldown .is-drilldown-submenu-parent .has-submenu  .js-drilldown-back > a::after {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: transparent #fefefe transparent transparent;
+  border-image: none;
+  border-style: inset inset inset solid;
+  border-width: 6px;
+  content: "";
+  display: block;
+  height: 0;
+  margin-top: 7px;
+  position: relative;
+  right: 0.4rem;
+  top: 0;
+  width: 0;
+  float: right;
+}
+
 
 .top-bar-right li {
   display: block;
@@ -256,4 +302,3 @@ main {
 }
 
 }
-
