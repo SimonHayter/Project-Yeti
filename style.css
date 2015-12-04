@@ -2,7 +2,7 @@
 Theme Name:         Project Yeti
 Theme URI:          https://www.bybe.net/project-yeti/
 Description:        A starter theme project using ZURB Foundation 6 designed for WordPress
-Version:            0.1c
+Version:            0.1d
 Author:             Simon Hayter
 Author URI:         https://simonhayter.co.uk
 
@@ -99,6 +99,10 @@ Tags: ZURB, Foundation 6, White, Grey, Blue, Responsive, Clean, Modern, Flat
   padding: 3px 6px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.py-copyright .menu.simple a:first-child {
+  padding: 0.7rem 1rem 0.7rem 0;
 }
 
 .py-copyright .py-lnk {
