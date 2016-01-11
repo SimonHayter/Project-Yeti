@@ -101,10 +101,6 @@ Tags: ZURB, Foundation 6, White, Grey, Blue, Responsive, Clean, Modern, Flat
   text-transform: uppercase;
 }
 
-.py-copyright .menu.simple a:first-child {
-  padding: 0.7rem 1rem 0.7rem 0;
-}
-
 .py-copyright .py-lnk {
   font-weight: normal;
   text-transform: capitalize;
