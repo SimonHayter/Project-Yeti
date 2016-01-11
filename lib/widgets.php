@@ -1,8 +1,6 @@
 <?php 
-
 if ( ! function_exists( 'py_widgets' ) ) :
 function py_widgets() {
-
 	register_sidebar(array(
 	  'id' => 'py-sidebar',
 	  'name' => __( 'Sidebar', 'projectyeti' ),
@@ -12,7 +10,6 @@ function py_widgets() {
 	  'before_title' => '<h6>',
 	  'after_title' => '</h6>',
 	));
-
 	register_sidebar(array(
 	  'id' => 'py-footer',
 	  'name' => __( 'Footer', 'projectyeti' ),
@@ -22,7 +19,6 @@ function py_widgets() {
 	  'before_title' => '<h6>',
 	  'after_title' => '</h6>',
 	));
-
 	register_sidebar(array(
 	  'id' => 'py-newsletter',
 	  'name' => __( 'Newsletter', 'projectyeti' ),
@@ -33,7 +29,6 @@ function py_widgets() {
 	  'after_title' => '</h6>',
 	));
 }
-
 add_action( 'widgets_init', 'py_widgets' );
 endif;
 ?>

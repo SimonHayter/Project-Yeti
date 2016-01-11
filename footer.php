@@ -14,7 +14,7 @@
                 <?php wp_nav_menu(array('theme_location' => 'footermenu', 'container' => false, 'menu_class' => 'py-footer-menu', 'fallback_cb' => 'py_footermenu_fallback', 'items_wrap'      => '<ul class="menu simple">%3$s</ul>')); ?>
             </div>
             <div class="medium-12 columns text-left">
-                <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>, Inc. All rights reserved.</p>
+                <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>, Inc. All Rights Reserved.</p>
             </div>
         </div>
     </div>

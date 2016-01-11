@@ -15,9 +15,7 @@
     <div class="top-bar-left">
       <ul class="menu show-for-medium">
         <li>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-            <?php bloginfo( 'name' ); ?>
-          </a>
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
         </li>
       </ul>
     </div>
