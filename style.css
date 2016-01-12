@@ -300,5 +300,24 @@ main {
 main {
     margin: 2rem 0;
 }
+}
 
+.vertical.menu.docs-menu li a { 
+	padding-left: 0; font-size: 0.85rem;
+}
+
+.docs-menu-title {
+    color: #999;
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+    padding-left: 0rem;
+    padding-top: 1.5rem;
+    text-transform: uppercase;
+}
+
+#YetiMenu .dropdown.menu .submenu > li {
+	list-style: none;
 }
