@@ -303,7 +303,8 @@ main {
 }
 
 .vertical.menu.docs-menu li a { 
-	padding-left: 0; font-size: 0.85rem;
+	padding-left: 0;
+	font-size: 0.85rem;
 }
 
 .docs-menu-title {
@@ -322,4 +323,13 @@ main {
 	list-style: none;
 }
 
-.py-copyright .menu > li:not(.menu-text):first-child > a { padding-left:0;}
+.py-copyright .menu > li:not(.menu-text):first-child > a { 
+	padding-left: 0;
+}
+
+#YetiMenu .js-dropdown-active li a {
+	padding-right: 1.5rem;
+	position: relative;
+	display: block;
+	line-height: 1;
+}
