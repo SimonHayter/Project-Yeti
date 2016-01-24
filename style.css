@@ -321,3 +321,5 @@ main {
 #YetiMenu .dropdown.menu .submenu > li {
 	list-style: none;
 }
+
+.py-copyright .menu > li:not(.menu-text):first-child > a { padding-left:0;}

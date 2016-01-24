@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 <div class="row">
-	<div class="small-12 large-8 columns">
-		<h1><?php _e('Search Results for', 'projectyeti'); ?> "<?php echo get_search_query(); ?>"</h1>
+	<div class="large-12 columns">
+		<div class="text-center">
+			<h1><?php _e('Search Results for', 'projectyeti'); ?> "<?php echo get_search_query(); ?>"</h1>
+		</div>
 		<?php if ( have_posts() ) : ?>
 		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -18,6 +20,5 @@
 		</nav>
 		<?php } ?>
 	</div>		
-	<?php get_sidebar(); ?>
 </div>		
 <?php get_footer(); ?>

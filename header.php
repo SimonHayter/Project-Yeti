@@ -1,9 +1,10 @@
 <!doctype html>
 <html class="py-theme" <?php language_attributes(); ?>>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <?php wp_head(); ?>
+  	<meta charset="utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  	<?php wp_head(); ?>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">
 </head>
 <body <?php body_class(); ?>>
 <header class="py-topbar">
@@ -15,7 +16,9 @@
     <div class="top-bar-left">
       <ul class="menu show-for-medium">
         <li>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+            <?php bloginfo( 'name' ); ?>
+          </a>
         </li>
       </ul>
     </div>
