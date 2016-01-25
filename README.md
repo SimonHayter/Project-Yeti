@@ -24,6 +24,25 @@ I welcome all quality contributions to framework and I hope with all your help w
 ### WordPress sites based on Project Yeti!
 Please hit me on Twitter [@SimonHayterUK](https://www.twitter.com/SimonHayterUK) with the URL so I can add your site to this page. Please only good sites, that look great! and does the Yeti Proud.
 
+### CSS or JS on the Cloud
+Project Yeti by default uses localhost stored JavaScripts and CSS files, to load these types of files from a content delivery network simply edit styles.php (lib/styles.php) and scripts.php (lib/scripts.php).
+
+To use the latest jQuery simply edit styles.php and have it look something like this:
+
+    <?php if( ! function_exists( 'py_scripts' ) ) {
+        function py_scripts() {
+            if (!is_admin()) {
+                wp_deregister_script( 'jquery' );
+                wp_register_script( 'jquery', 'https://code.jquery.com/jquery-2.1.4.min.js', array(), '2.1.4', false );
+                wp_register_script( 'foundation-js', get_template_directory_uri() . '/js/foundation.js', array( 'jquery' ), '', true );
+                wp_enqueue_script( 'jquery' );
+                wp_enqueue_script( 'foundation-js' );
+            }
+        }
+    }
+    add_action( 'wp_enqueue_scripts', 'py_scripts' );
+    ?>
+
 ### WordPress Theme Features to come...
 - Hentry Disabled in favour of SCHEMA
 - WP Icons Removed
