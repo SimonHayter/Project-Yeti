@@ -1,15 +1,17 @@
 /*
 Theme Name:         Project Yeti
 Theme URI:          https://www.bybe.net/project-yeti/
-Description:        A starter theme project using ZURB Foundation 6 designed for WordPress
-Version:            1.0
 Author:             Simon Hayter
 Author URI:         https://simonhayter.co.uk
-
+Description:        Project Yeti is a starter theme for developers, bloggers and website designers wanting a responsive WordPress template based on Zurb Foundation 6. Great for all modern browsers and compatible with most mobile phones, tablets and desktop computers! Powered by Zurb and coded by Simon Hayter from BYBE.
+Version:            1.2
 License:            GNU GENERAL PUBLIC LICENSE
 License URI:        http://www.gnu.org/licenses/gpl-3.0.en.html
+Tags: light, white, blue, grey, responsive layout, left sidebar, right sidebar, custom Menu
+Text-domain: projectyeti
 
-Tags: ZURB, Foundation 6, White, Grey, Blue, Responsive, Clean, Modern, Flat
+This theme, like WordPress, is licensed under the GPL.
+Use it to change the world every visitor at a time.
 */
 
 .py-theme .top-bar {
@@ -230,6 +232,10 @@ main {
   margin: 0;
 }
 
+.py-theme .submenu.is-drilldown-submenu.is-active {
+	margin-left: 0.7rem;
+}
+
 .has-submenu.submenu.is-drilldown-submenu.is-active li {
   margin: 0.7rem 1rem;
 }
@@ -332,4 +338,38 @@ main {
 	position: relative;
 	display: block;
 	line-height: 1;
+}
+
+.wp-caption, .wp-caption-text {
+	font-weight: normal;
+	font-style: italic;
+}
+
+.gallery-caption {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.screen-reader-text, .bypostauthor {
+	font-weight: normal;
+}
+
+.alignright {
+	text-align: right;
+}
+
+.alignleft {
+	text-align: left;
+}
+
+.aligncenter {
+	text-align: center;
+}
+
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
 }

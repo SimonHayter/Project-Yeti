@@ -132,4 +132,9 @@ if( ! function_exists( 'py_img_unautop' ) ) {
 	}
 }
 
+if ( ! isset( $content_width ) ) {
+	$content_width = 770;
+}
+
+
 ?>

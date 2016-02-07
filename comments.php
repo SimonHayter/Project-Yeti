@@ -51,6 +51,7 @@
   </div>
 <?php else : // this is displayed if there are no comments so far ?>
   <?php if ( comments_open() ) : ?>
+  <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
   <?php else : // comments are closed ?>
   <div id="comments">
     <div class="notice">
@@ -61,37 +62,21 @@
 <?php endif; ?>
 <?php if ( comments_open() ) : ?>
 <div id="respond">
-  <h3><?php comment_form_title( __('Leave a Reply', 'projectyeti'), __('Leave a Reply to %s', 'projectyeti') ); ?></h3>
-  <p class="cancel-comment-reply"><?php cancel_comment_reply_link(); ?></p>
-  <?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
-  <p><?php printf( __('You must be <a href="%s">logged in</a> to post a comment.', 'projectyeti'), wp_login_url( get_permalink() ) ); ?></p>
-  <?php else : ?>
-  <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
-    <?php if ( is_user_logged_in() ) : ?>
-    <p><?php printf(__('Logged in as <a href="%s/wp-admin/profile.php">%s</a>.', 'projectyeti'), get_option('siteurl'), $user_identity); ?> <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php __('Log out of this account', 'projectyeti'); ?>"><?php _e('Log out &raquo;', 'projectyeti'); ?></a></p>
-    <?php else : ?>
-    <p>
-      <label for="author"><?php _e('Name', 'projectyeti'); if ($req) _e(' (required)', 'projectyeti'); ?></label>
-      <input type="text" class="five" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?>>
-    </p>
-    <p>
-      <label for="email"><?php _e('Email (will not be published)', 'projectyeti'); if ($req) _e(' (required)', 'projectyeti'); ?></label>
-      <input type="text" class="five" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?>>
-    </p>
-    <p>
-      <label for="url"><?php _e('Website', 'projectyeti'); ?></label>
-      <input type="text" class="five" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3">
-    </p>
-    <?php endif; ?>
-    <p>
-      <label for="comment"><?php _e('Comment', 'projectyeti'); ?></label>
-      <textarea name="comment" id="comment" tabindex="4"></textarea>
-    </p>
-    <p id="allowed_tags" class="small"><strong>XHTML:</strong> <?php _e('You can use these tags:','projectyeti'); ?> <code><?php echo allowed_tags(); ?></code></p>
-    <p><input name="submit" class="small radius button" type="submit" id="submit" tabindex="5" value="<?php esc_attr_e('Submit Comment', 'projectyeti'); ?>"></p>
-    <?php comment_id_fields(); ?>
-    <?php do_action('comment_form', $post->ID); ?>
-  </form>
-  <?php endif; // endif for logged in or not ?>
+  <?php
+    // Cleanup Comments
+    $comments_args = array(
+      'id_form' => 'commentform',
+      'class_form' => 'comment-form',
+      'class_submit' => 'small radius button',
+      'name_submit' => 'submit',
+      'title_reply' => __( 'Leave a Reply', 'projectyeti' ),
+      'title_reply_to' => __( 'Leave a Reply to %s', 'projectyeti' ),
+      'cancel_reply_link' => __( 'Cancel Reply', 'projectyeti' ),
+      'label_submit' => __( 'Post Comment', 'projectyeti' ),
+      'format' => 'xhtml',
+      'comment_notes_after' => '<p class="form-allowed-tags">' . sprintf( __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes: %s', 'projectyeti' ), ' <code>' . allowed_tags() . '</code>' ) . '</p>'
+    );
+    comment_form($comments_args);
+  ?>
 </div>
 <?php endif; // if you delete this you will die irl ?>

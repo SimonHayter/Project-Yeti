@@ -12,8 +12,8 @@
     <?php ?>
     <?php if ( function_exists('py_pagination') ) { py_pagination(); } else if ( is_paged() ) { ?>
     <nav id="post-nav">
-      <div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'projectyeti' ) ); ?></div>
-      <div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'projectyeti' ) ); ?></div>
+      <div class="post-previous"><?php next_posts_link( __('&larr; Older posts', 'projectyeti') ); ?></div>
+      <div class="post-next"><?php previous_posts_link( __('Newer posts &rarr;', 'projectyeti') ); ?></div>
     </nav>
     <?php } ?>
   </div>

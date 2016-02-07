@@ -13,8 +13,8 @@ if( ! function_exists( 'py_pagination' ) ) {
             'total' => $wp_query->max_num_pages,
             'mid_size' => 5,
             'prev_next' => True,
-            'prev_text' => __('Previous'),
-            'next_text' => __('Next'),
+            'prev_text' => __('Previous', 'projectyeti'),
+            'next_text' => __('Next', 'projectyeti'),
             'type' => 'list'
         ) );
      

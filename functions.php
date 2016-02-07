@@ -8,6 +8,11 @@ require_once('lib/menu.php');
 require_once('lib/supports.php');
 require_once('lib/widgets.php');
 require_once('lib/meta.php');
-require_once('lib/shortcodes.php');
 
+load_theme_textdomain('project-yeti', get_template_directory() . '/lang');
+
+add_action('after_setup_theme', 'my_theme_setup');
+function my_theme_setup(){
+    load_theme_textdomain('project-yeti', get_template_directory() . '/lang');
+}
 ?>
