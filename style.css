@@ -103,6 +103,10 @@ Use it to change the world every visitor at a time.
   text-transform: uppercase;
 }
 
+.py-copyright .menu .active > a {
+  background: transparent;
+}
+
 .py-copyright .py-lnk {
   font-weight: normal;
   text-transform: capitalize;
@@ -227,11 +231,26 @@ main {
 }
 
 @media only screen and (max-width: 639px) {
+
+.menu-icon::after {
+    background: #666;
+    box-shadow: 0 7px 0 #666, 0 14px 0 #666;
+}
+
+.menu-icon:hover::after {
+    background: #fefefe;
+    box-shadow: 0 7px 0 #fefefe, 0 14px 0 #fefefe;
+}
+
 .js-drilldown-back::before {
   border-width: 0;
   margin: 0;
 }
 
+.js-drilldown-back > a::before {
+    border-color: transparent #666;
+    margin-bottom: 3px;
+}
 .py-theme .submenu.is-drilldown-submenu.is-active {
 	margin-left: 0.7rem;
 }
@@ -241,11 +260,11 @@ main {
 }
 
 .is-drilldown-submenu-parent > a::after {
-  border-color: transparent transparent transparent #fefefe;
+  border-color: transparent transparent transparent #666;
 }
 
 .menu.drilldown .is-drilldown-submenu-parent .has-submenu .is-drilldown-submenu-parent > a::after {
-  border-color: transparent transparent transparent #fefefe;
+  border-color: transparent transparent transparent #666;
   float: right;
   height: 0;
   margin-top: 7px;
@@ -254,30 +273,10 @@ main {
   top: 0;
 }
 
+
 .menu.drilldown li:last-child {
   margin-bottom: 0.5rem;
 }
-
-.menu.drilldown .is-drilldown-submenu-parent .has-submenu  .js-drilldown-back > a::after {
-  -moz-border-bottom-colors: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
-  border-color: transparent #fefefe transparent transparent;
-  border-image: none;
-  border-style: inset inset inset solid;
-  border-width: 6px;
-  content: "";
-  display: block;
-  height: 0;
-  margin-top: 7px;
-  position: relative;
-  right: 0.4rem;
-  top: 0;
-  width: 0;
-  float: right;
-}
-
 
 .top-bar-right li {
   display: block;
@@ -338,6 +337,10 @@ main {
 	position: relative;
 	display: block;
 	line-height: 1;
+}
+
+#YetiMenu .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  border-color: #666 transparent transparent;
 }
 
 .wp-caption, .wp-caption-text {
