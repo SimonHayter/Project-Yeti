@@ -1,4 +1,4 @@
-<?php /* Template Name: Page Sidebar Left */ get_header(); ?>
+<?php /* Template Name: Page Sidebar Right */ get_header(); ?>
 <?php ?>
 <?php while (have_posts()) : the_post(); ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class('row'); ?>>

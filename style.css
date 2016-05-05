@@ -252,7 +252,7 @@ main {
     margin-bottom: 3px;
 }
 .py-theme .submenu.is-drilldown-submenu.is-active {
-	margin-left: 0.7rem;
+	margin-left: 0;
 }
 
 .has-submenu.submenu.is-drilldown-submenu.is-active li {
@@ -341,6 +341,18 @@ main {
 
 #YetiMenu .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
   border-color: #666 transparent transparent;
+}
+
+#YetiMenu .dropdown.menu > li.is-dropdown-submenu-parent.active > a::after {
+  border-color: #fff transparent transparent;
+}
+
+#YetiMenu .dropdown.menu > li.is-dropdown-submenu-parent.active > a {
+  color: #fff;
+}
+
+#YetiMenu .dropdown.menu > li.is-dropdown-submenu-parent.active > .first-sub.vertical li.active a {
+  color: #fff;
 }
 
 .wp-caption, .wp-caption-text {
